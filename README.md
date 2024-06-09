@@ -1,5 +1,8 @@
 # pw_template_pico_1
 
+\*\* Building Basic PARTNERwith site using PICO CSS framework.
+https://codesandbox.io/embed/4mrnhq?view=Editor+%2B+Preview&module=%2Fjs%2Fmodal.js
+
 John Doe from ChatGPT
 
 Name:
