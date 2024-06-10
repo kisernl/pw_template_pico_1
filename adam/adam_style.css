@@ -2,19 +2,22 @@
   max-width: 480px;
   margin: 0 auto;
 }
-header {
+
+.block {
+  height: 800px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+#profile {
   text-align: center;
+  padding-top: 0;
 }
 
 .logo {
-  width: 75vw;
-}
-
-.pic-sliders {
-  background-color: rgb(212, 212, 212);
-  padding: 1.5rem;
+  max-width: 75vw;
 }
 
 .picture {
-  width: 100%;
+  max-width: 100%;
 }
