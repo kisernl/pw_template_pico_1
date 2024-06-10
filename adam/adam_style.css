@@ -1,23 +1,95 @@
 * {
   max-width: 480px;
   margin: 0 auto;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(240, 242, 246);
+}
+
+body h1,
+h2,
+p {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
 }
 
 .block {
-  height: 800px;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  height: fit-content;
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
+
+/* Profile Block */
 
 #profile {
   text-align: center;
-  padding-top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 5px;
+}
+
+#profile img {
+  background-color: #ffffff;
 }
 
 .logo {
-  max-width: 75vw;
+  max-width: 55vw;
 }
 
 .picture {
   max-width: 100%;
+}
+#profile-description {
+  background-color: #ffffff;
+  padding-bottom: 1rem;
+}
+
+#profile-description h2 {
+  background-color: #ffffff;
+  font-size: 2rem;
+  /* font-family: "Quicksand", sans-serif; */
+}
+
+#profile-description p {
+  background-color: #ffffff;
+  font-size: 1.25rem;
+}
+
+#partner-button {
+  font-size: 2rem;
+  padding: 15px 40px;
+}
+
+#profile article {
+  padding-bottom: 25px;
+}
+
+/* Journey Block */
+
+.journey-pic img {
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.journey-description,
+h2,
+p {
+  background-color: #ffffff;
+}
+
+.journey-description h2 {
+  font-size: 2rem;
+}
+
+.journey-description blockquote,
+footer,
+cite {
+  background-color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.journey-description cite {
+  
 }
