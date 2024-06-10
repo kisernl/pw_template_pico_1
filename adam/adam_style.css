@@ -66,6 +66,25 @@ p {
   padding-bottom: 25px;
 }
 
+/* Who We Are Block */
+
+.family-pic img {
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.who-we-are-description {
+  background-color: #ffffff;
+}
+
+.who-we-are-description h2 {
+  font-size: 2rem;
+}
+
+.who-we-are-description p {
+  font-size: 1.25rem;
+  text-align: justify;
+}
 /* Journey Block */
 
 .journey-pic img {
@@ -91,5 +110,11 @@ cite {
 }
 
 .journey-description cite {
-  
+  font-weight: 700;
+}
+
+.journey-description blockquote {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  text-align: justify;
 }
