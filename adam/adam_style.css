@@ -266,7 +266,7 @@ cite {
   background-color: #ffffff;
 }
 
-details,
+#accordion details,
 summary {
   font-size: 1.5rem;
   background-color: #ffffff;
@@ -274,7 +274,7 @@ summary {
   margin-bottom: 0.5rem;
 }
 
-details blockquote {
+#accordion details blockquote {
   font-size: 1.2rem;
   background-color: #ffffff;
   text-align: justify;
