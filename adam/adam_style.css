@@ -243,3 +243,39 @@ cite {
   margin-bottom: 5px;
   text-align: justify;
 }
+
+/* Why Partner Block */
+
+.why-partner-description {
+  background-color: #ffffff;
+}
+
+.why-partner-description h2 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.why-partner-description p {
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
+/* accordion */
+
+#accordion {
+  background-color: #ffffff;
+}
+
+details,
+summary {
+  font-size: 1.5rem;
+  background-color: #ffffff;
+  padding-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+details blockquote {
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  text-align: justify;
+}
