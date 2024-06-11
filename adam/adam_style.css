@@ -68,6 +68,11 @@ p {
 
 /* Who We Are Block */
 
+.family-pic {
+  padding-top: 1rem;
+  background-color: #ffffff;
+}
+
 .family-pic img {
   border-radius: 15px;
   background-color: #ffffff;
@@ -114,6 +119,126 @@ cite {
 }
 
 .journey-description blockquote {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+/* Now Block */
+
+.square-slider {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #ffffff;
+}
+
+.square-pictures {
+  background-color: #ffffff;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 10px;
+  scrollbar-width: none;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.square-picture {
+  max-width: 335px;
+  height: auto;
+  background-color: #ffffff;
+  flex-shrink: 0;
+  overflow: hidden;
+  scroll-snap-align: start;
+  margin: 10px;
+}
+
+.square-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#right-arrow {
+  display: flex;
+  justify-content: end;
+  background-color: #ffffff;
+  padding-right: 1rem;
+}
+
+#portrait-cards {
+  height: 100vh;
+  background-color: #dfebf6;
+  color: #44576d;
+}
+
+.portrait-cards-container {
+  overflow: hidden;
+  padding-left: 5px;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  background-color: #ffffff;
+}
+
+.portrait-cards-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  background-color: #ffffff;
+}
+
+.pictures {
+  background-color: #ffffff;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 10px;
+  scrollbar-width: none;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.picture {
+  max-width: 340px;
+  height: auto;
+  background-color: #ffffff;
+  flex-shrink: 0;
+  border-radius: 30px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  margin: 10px;
+}
+
+.picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.now-description {
+  background-color: #ffffff;
+}
+
+.now-description h2 {
+  font-size: 2rem;
+  background-color: #ffffff;
+}
+
+.now-description blockquote,
+footer,
+cite {
+  background-color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.now-description cite {
+  font-weight: 700;
+}
+
+.now-description blockquote {
   padding-bottom: 5px;
   margin-bottom: 5px;
   text-align: justify;
