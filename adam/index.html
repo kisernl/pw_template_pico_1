@@ -16,31 +16,25 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/395e51313e.js"
-      crossorigin="anonymous"
-    ></script>
     <title>Adam S</title>
   </head>
   <body>
     <main class="container">
       <!-- Header -->
       <section class="block" id="profile">
-        <article>
-          <div class="logo">
-            <img src="img/adan_logo.png" />
-          </div>
-          <div class="profile-pic">
-            <img src="img/adam_profile_qr.png" alt="profile picture" />
-          </div>
-          <br />
-          <br />
-          <div id="profile-description">
-            <h2>Fatherhood Director</h2>
-            <p>Women's Hope Medical Clinic</p>
-          </div>
-          <button class="outline" id="partner-button">Partner</button>
-        </article>
+        <div class="logo">
+          <img src="img/adam-logo-canva.png" />
+        </div>
+        <div class="profile-pic">
+          <img src="img/adam_profile_qr.png" alt="profile picture" />
+        </div>
+        <br />
+        <br />
+        <div id="profile-description">
+          <h2>Fatherhood Director</h2>
+          <p>Women's Hope Medical Clinic</p>
+        </div>
+        <button class="outline" id="partner-button">Partner</button>
       </section>
       <!-- ./ Header -->
       <!-- Who We Are -->
@@ -107,6 +101,76 @@
               </div>
             </div>
             <i class="fa-solid fa-arrow-right" id="right-arrow"></i>
+          </div>
+          <div id="modal-info">
+            \
+            <!-- info modal 1 -->
+            <button
+              class="outline"
+              data-target="modal-advocate"
+              onclick="toggleModal(event)"
+            >
+              <img src="img/what-God-is-doing-1.png" alt="advocating" />
+            </button>
+
+            <dialog id="modal-advocate">
+              <article>
+                <header>
+                  <button
+                    aria-label="Close"
+                    rel="prev"
+                    data-target="modal-advocate"
+                    onclick="toggleModal(event)"
+                  ></button>
+                </header>
+                <img src="img/what-God-is-doing-1.png" alt="advocating" />
+              </article>
+            </dialog>
+
+            <!-- info modal 2 -->
+            <button
+              class="outline"
+              data-target="modal-father"
+              onclick="toggleModal(event)"
+            >
+              <img src="img/what-God-is-doing-2.png" alt="father map" />
+            </button>
+
+            <dialog id="modal-advocate">
+              <article>
+                <header>
+                  <button
+                    aria-label="Close"
+                    rel="prev"
+                    data-target="modal-father"
+                    onclick="toggleModal(event)"
+                  ></button>
+                </header>
+                <img src="img/what-God-is-doing-2.png" alt="father map" />
+              </article>
+            </dialog>
+
+            <!-- info modal 3 -->
+            <button
+              class="outline"
+              data-target="modal-circle"
+              onclick="toggleModal(event)"
+            >
+              <img src="img/what-God-is-doing-3.png" alt="center circle" />
+            </button>
+            <dialog id="modal-circle">
+              <article>
+                <header>
+                  <button
+                    aria-label="Close"
+                    rel="prev"
+                    data-target="modal-circle"
+                    onclick="toggleModal(event)"
+                  ></button>
+                </header>
+                <img src="img/what-God-is-doing-3.png" alt="center-circle" />
+              </article>
+            </dialog>
           </div>
           <br />
           <div class="now-description">
@@ -202,5 +266,6 @@
       </section>
       <section class="block" id="partner-block"></section>
     </main>
+    <script src="adam.js"></script>
   </body>
 </html>

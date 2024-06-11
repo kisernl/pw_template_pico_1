@@ -5,7 +5,8 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  background-color: rgb(240, 242, 246);
+  /* background-color: rgb(240, 242, 246); */
+  background-color: #eff5fc;
 }
 
 body h1,
