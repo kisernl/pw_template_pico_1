@@ -89,7 +89,90 @@ p {
   /* text-align: justify; */
   background-color: transparent;
 }
+#who-we-are {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  margin: 0;
+}
+
+#who-we-are p {
+  font-size: 1.1rem;
+}
+
+.who-we-are-description {
+  background-color: #dfebf6;
+  padding: 1.5rem 0.75rem;
+  border-radius: 15px;
+}
+
+#who-we-are .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  margin: -150px;
+  float: left;
+  perspective: 500px;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  display: grid;
+  grid-gap: 1rem;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #63465a;
+  color: #fffef9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  font-size: 1rem;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.front h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.back h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.back {
+  background: #63465a;
+  color: #fffef9;
+  transform: rotateY(180deg);
+  grid-gap: 0;
+}
+
 /* Journey Block */
+
+#journey-block {
+  margin-top: 0;
+}
 
 .journey-pic img {
   border-radius: 15px;
@@ -117,15 +200,17 @@ p {
   margin-top: 0;
 }
 
-/* .journey-description blockquote {
-  padding-bottom: 5px;
-  margin-bottom: 5px;
-  text-align: justify;
-} */
+#modal-verse-1 {
+  background-color: transparent;
+}
+
+#modal-journey-verse-1 cite {
+  background-color: transparent;
+}
 
 /* Now Block */
 
-.square-slider {
+/* .square-slider {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background-color: #ffffff;
@@ -165,6 +250,21 @@ p {
   justify-content: end;
   background-color: #ffffff;
   padding-right: 1rem;
+} */
+
+#modal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+
+#modal-info #modal-1,
+#modal-2,
+#modal-3 {
+  width: 100%;
+  margin: 5px;
+  /* background-color: transparent; */
 }
 
 #portrait-cards {
@@ -226,15 +326,10 @@ p {
   background-color: #ffffff;
 }
 
-.now-description blockquote,
-footer,
-cite {
+.now-description details,
+summary,
+blockquote {
   background-color: #ffffff;
-  font-size: 1.25rem;
-}
-
-.now-description cite {
-  font-weight: 700;
 }
 
 .now-description blockquote {
