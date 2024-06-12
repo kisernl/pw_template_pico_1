@@ -1,19 +1,22 @@
 * {
   max-width: 480px;
   margin: 0 auto;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  /* background-color: rgb(240, 242, 246); */
+  font-variation-settings: "wdth" 100;
   background-color: #eff5fc;
 }
 
 body h1,
 h2,
 p {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 .block {
@@ -27,75 +30,69 @@ p {
 #profile {
   text-align: center;
   width: 100%;
-  background-color: #ffffff;
-  margin-top: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #profile img {
-  background-color: #ffffff;
+  max-width: 75vw;
 }
 
-.logo {
-  max-width: 55vw;
+.logo img {
+  max-width: 45vw;
+  justify-items: center;
 }
 
 .picture {
   max-width: 100%;
 }
+
 #profile-description {
-  background-color: #ffffff;
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
 }
 
 #profile-description h2 {
-  background-color: #ffffff;
   font-size: 2rem;
-  /* font-family: "Quicksand", sans-serif; */
+  background-color: transparent;
+  margin-bottom: 0;
 }
 
 #profile-description p {
-  background-color: #ffffff;
   font-size: 1.25rem;
+  background-color: transparent;
+  margin-bottom: 0.5rem;
 }
 
-#partner-button {
-  font-size: 2rem;
-  padding: 15px 40px;
-}
-
-#profile article {
-  padding-bottom: 25px;
+.father-quote p {
+  background-color: transparent;
+  font-size: 0.75rem;
+  margin-top: 1rem;
 }
 
 /* Who We Are Block */
 
 .family-pic {
   padding-top: 1rem;
-  background-color: #ffffff;
 }
 
 .family-pic img {
   border-radius: 15px;
-  background-color: #ffffff;
 }
 
-.who-we-are-description {
-  background-color: #ffffff;
-}
-
-.who-we-are-description h2 {
+/* .who-we-are-description h2 {
   font-size: 2rem;
-}
+  background-color: transparent;
+} */
 
 .who-we-are-description p {
-  font-size: 1.25rem;
-  text-align: justify;
+  font-size: 1.1rem;
+  /* text-align: justify; */
+  background-color: transparent;
 }
 /* Journey Block */
 
 .journey-pic img {
   border-radius: 15px;
-  background-color: #ffffff;
 }
 
 .journey-description,
@@ -108,22 +105,23 @@ p {
   font-size: 2rem;
 }
 
-.journey-description blockquote,
-footer,
-cite {
-  background-color: #ffffff;
+.journey-description summary {
+  background-color: transparent;
   font-size: 1.25rem;
 }
 
-.journey-description cite {
-  font-weight: 700;
+.journey-description {
+  /* border: #44576d solid 1px; */
+  background-color: transparent;
+  align-items: center;
+  margin-top: 0;
 }
 
-.journey-description blockquote {
+/* .journey-description blockquote {
   padding-bottom: 5px;
   margin-bottom: 5px;
   text-align: justify;
-}
+} */
 
 /* Now Block */
 
