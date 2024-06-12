@@ -181,7 +181,7 @@ p {
 .journey-description,
 h2,
 p {
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 .journey-description h2 {
@@ -251,6 +251,18 @@ p {
   background-color: #ffffff;
   padding-right: 1rem;
 } */
+
+#now-block {
+  background-color: transparent;
+}
+
+.fatherhood-quote p {
+  background-color: transparent;
+  text-align: center;
+  font-size: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
 
 #modal-info {
   display: flex;
