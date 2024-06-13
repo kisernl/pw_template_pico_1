@@ -364,7 +364,9 @@ blockquote {
 
 .why-partner-description h2 {
   font-size: 2rem;
+  font-weight: 600;
   padding-bottom: 0.5rem;
+  text-align: center;
 }
 
 .why-partner-description p {
@@ -407,14 +409,13 @@ blockquote {
 }
 
 /* Partner Block */
-
 .partner-buttons {
   display: grid;
   grid-template-columns: 1fr;
   /*   grid-gap: 1rem; */
   place-items: center;
 }
-.partner-buttons .button {
+.partner-buttons button {
   font-size: 18px;
   color: #44576d;
   font-family: inherit;
@@ -430,19 +431,18 @@ blockquote {
   padding: 0.25rem;
 }
 
-.partner-buttons .button:focus,
-.partner-buttons .button:hover {
+.partner-buttons button:focus,
+.partner-buttons button:hover {
   color: #44576d;
 }
 
-.partner-buttons .button:focus:after,
-.partner-buttons .button:hover:after {
+.partner-buttons button:focus:after,
+.partner-buttons button:hover:after {
   width: 100%;
   left: 0%;
-  border: none;
 }
 
-.partner-buttons .button:after {
+.partner-buttons button:after {
   content: "";
   pointer-events: none;
   bottom: -2px;
@@ -451,8 +451,6 @@ blockquote {
   width: 0%;
   height: 2px;
   background-color: #44576d;
-  border: none;
-  border-color: transparent;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
