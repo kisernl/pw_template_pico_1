@@ -391,31 +391,23 @@ summary {
   background-color: #ffffff;
   text-align: justify;
 }
+/* Section Verse Accordion -- MOBILE ONLY */
+.accordion-container {
+  display: flex;
+}
 
-:root {
-  --primary: #44576d;
-  --secondary: #e6e6e6;
-  --background: #e6e6e6;
-  --highlight: #dfebf6;
-  /* Theme color */
-  --theme: var(--primary);
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 .accordion {
   display: grid;
+  grid-template-columns: 1fr;
   place-content: center;
-  grid-template-columns: repeat(auto-fit, min(100%, 30rem));
-  min-height: 100vh;
-  place-items: start;
+  /* grid-template-columns: repeat(auto-fit, min(100%, 30rem)); */
+  /* min-height: 100vh; */
+  width: 100%;
   gap: 1rem;
-  margin: 0;
+  margin: 0 auto;
   padding: 1rem;
-  color: var(--primary);
-  background: var(--background);
+  color: #63465a;
+  background: #fffef9;
 }
 
 /* Core styles/functionality */
@@ -430,12 +422,29 @@ summary {
   transition: all 0.35s;
 }
 .tab input:checked ~ .tab__content {
-  max-height: 10rem;
+  max-height: 100%;
 }
 
-/* Visual styles */
+.accordion {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.accordion h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  /* padding-top: 2rem; */
+  padding-bottom: 2rem;
+}
+
 .accordion-container {
-  color: var(--theme);
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  color: #63465a;
   border: 2px solid;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -444,11 +453,12 @@ summary {
 .tab__close {
   display: flex;
   color: white;
-  background: var(--theme);
+  background: #63465a;
   cursor: pointer;
 }
 .tab__label {
   justify-content: space-between;
+  font-size: 1.5rem;
   padding: 1rem;
 }
 .tab__label::after {
@@ -465,25 +475,5 @@ summary {
 .tab__content p {
   margin: 0;
   padding: 1rem;
-}
-.tab__close {
-  justify-content: flex-end;
-  padding: 0.5rem 1rem;
-  font-size: 0.75rem;
-}
-.accordion--radio {
-  --theme: var(--secondary);
-}
-
-/* Arrow animation */
-.tab input:not(:checked) + .tab__label:hover::after {
-  animation: bounce 0.5s infinite;
-}
-@keyframes bounce {
-  25% {
-    transform: rotate(90deg) translate(0.25rem);
-  }
-  75% {
-    transform: rotate(90deg) translate(-0.25rem);
-  }
+  font-size: 1.25rem;
 }
