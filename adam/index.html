@@ -76,13 +76,13 @@
           />
         </div>
         <br />
-        <article class="journey-description">
+        <div class="journey-description">
           <div
             id="modal-verse-1"
             data-target="modal-journey-verse-1"
             onclick="toggleModal(event)"
           >
-            Psalm 37:23-26
+            <u>Psalm 37:23-26</u>
           </div>
 
           <dialog id="modal-journey-verse-1">
@@ -106,7 +106,7 @@
               <cite>Psalm 37:23-26</cite>
             </article>
           </dialog>
-        </article>
+        </div>
       </section>
 
       <!-- Now Block -->
@@ -116,8 +116,8 @@
           <p>
             "The lone father is not a strong father. Fathering is a difficult
             and perilous journey and is done well with the help of other men."
+            <br /><b>John L. Hart</b>
           </p>
-          <p><b>– John L. Hart</b></p>
         </div>
         <div id="modal-info">
           <!-- info modal 1 -->
@@ -193,24 +193,49 @@
         </div>
         <br />
         <div class="now-description">
-          <details>
-            <summary>Jeremiah 10:6-7</summary>
-            <blockquote>
-              "LORD, there is no one like you. You are great; your name is great
-              in power. Who should not fear you, King of the nations? It is what
-              you deserve. For among all the wise people of the nations and
-              among all their kingdoms, there is no one like you."
-            </blockquote>
-          </details>
+          <!-- <div
+            id="modal-verse-2"
+            data-target="modal-now-verse"
+            onclick="toggleModal(event)"
+          >
+            Jeremiah 10:6-7
+          </div>
+          <dialog id="modal-now-verse">
+            <article>
+              <header>
+                <button
+                  aria-label="Close"
+                  rel="prev"
+                  data-target="modal-now-verse"
+                  onclick="toggleModal(event)"
+                ></button>
+              </header>
+              <blockquote>
+                "LORD, there is no one like you. You are great; your name is
+                great in power. Who should not fear you, King of the nations? It
+                is what you deserve. For among all the wise people of the
+                nations and among all their kingdoms, there is no one like you."
+              </blockquote>
+            <cite>Jeremiah 10:6-7</cite>
+             </article>
+          </dialog> -->
+        </div>
+        <div class="now-verse">
+          <p>
+            "LORD, there is no one like you. You are great; your name is great
+            in power. Who should not fear you, King of the nations? It is what
+            you deserve. For among all the wise people of the nations and among
+            all their kingdoms, there is no one like you."<br />
+            <b>Jeremiah 10:6-7</b>
+          </p>
         </div>
       </section>
       <section class="block" id="potrait-cards">
-        <article class="portrait-cards-container">
-          <h1>Where Conversations Happen</h1>
+        <div class="portrait-cards-container">
           <!-- clinic pictures -->
           <div class="pictures" id="clinic">
             <div class="picture" data-picture="clinic-cover">
-              <img src="img/clinic1.png" alt="clinic title" />
+              <img src="img/whmc_clinic_title.png" alt="clinic title" />
             </div>
             <div class="picture" data-picture="clinic lobby">
               <img src="img/clinic2.png" alt="clinic lobby" />
@@ -224,7 +249,7 @@
           </div>
           <div class="pictures" id="hfc">
             <div class="picture" data-picture="hfc-cover">
-              <img src="img/family1.png" alt="hfc title" />
+              <img src="img/whmc_hfc_title.png" alt="hfc title" />
             </div>
             <div class="picture" data-picture="clinic lobby">
               <img src="img/family2.png" alt="hfc lobby" />
@@ -236,50 +261,96 @@
               <img src="img/family4.png" alt="man cave" />
             </div>
           </div>
-        </article>
+        </div>
       </section>
       <section class="block" id="why-partner">
-        <article>
-          <div class="why-partner-description">
-            <h2>Why Are We Seeking Ministry Partners?</h2>
-            <p>
-              In short, this is how God designed the body of Christ to function.
-            </p>
-            <p>
-              As it became clear that God was calling our family to Women's
-              Hope, a funny thing happened: we began to see that this ministry
-              position would force us to depend more fully on God and increase
-              our understanding of how he chooses to provide.
-            </p>
+        <div class="why-partner-description">
+          <h2>Seeking Ministry Partners</h2>
+          <p>
+            As it became clear that God was calling our family to Women's Hope,
+            a funny thing happened: we began to see that this ministry position
+            would force us to depend more fully on God and increase our
+            understanding of how he chooses to provide.
+          </p>
+        </div>
+        <section class="accordion">
+          <div class="accordion-container">
+            <div class="tab">
+              <input type="checkbox" name="accordion-1" id="cb1" checked />
+              <label for="cb1" class="tab__label">Habakkuk 2:14</label>
+              <div class="tab__content">
+                <p>
+                  <i
+                    >For the <u>earth will be filled</u> with the knowledge of
+                    the <u>glory of the Lord</u> as the waters cover the sea.</i
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="checkbox" name="accordion-1" id="cb2" />
+              <label for="cb2" class="tab__label">Revelation 7:9-10</label>
+              <div class="tab__content">
+                <p>
+                  <i
+                    >After this I looked, and behold, a
+                    <u>great multitude</u> that no one could number, from
+                    <u
+                      >every nation, from all tribes and peoples and
+                      languages</u
+                    >, standing before the throne and before the Lamb, clothed
+                    in white robes, with palm branches in their hands, and
+                    crying out with a loud voice, “Salvation belongs to our God
+                    who sits on the throne, and to the Lamb!”</i
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="checkbox" name="accordion-1" id="cb3" />
+              <label for="cb3" class="tab__label">Matthew 28:18-20</label>
+              <div class="tab__content">
+                <p>
+                  <i
+                    >And Jesus came and said to them, “All authority in heaven
+                    and on earth has been given to me. <u>Go</u> therefore and
+                    <u>make disciples of all nations</u>, baptizing them in the
+                    name of the Father and of the Son and of the Holy Spirit,
+                    teaching them to observe all that I have commanded you. And
+                    behold, I am with you always, to the end of the age.”</i
+                  >
+                </p>
+              </div>
+            </div>
           </div>
-          <div id="accordion">
-            <details open>
-              <summary>Ephesians 6:19-20</summary>
-              <blockquote>
-                Pray also for me, that the message may be given to me when I
-                open my mouth to make known with boldness the mystery of the
-                gospel. For this I am an ambassador in chains. Pray that I might
-                be bold enough to speak about it as I should.
-              </blockquote>
-            </details>
-            <details>
-              <summary>Colossians 4:2-4</summary>
-              <blockquote>
-                Devote yourselves to prayer; stay alert in it with thanksgiving.
-                At the same time, pray also for us that God may open a door to
-                us for the word, to speak the mystery of Christ, for which I am
-                in chains, so that I may make it known as I should.
-              </blockquote>
-            </details>
-            <details>
-              <summary>Philippians 4:17</summary>
-              <blockquote>
-                Not that I seek the gift, but I seek the profit that is
-                increasing to your account.
-              </blockquote>
-            </details>
-          </div>
-        </article>
+        </section>
+        <div id="accordion">
+          <details open>
+            <summary>Ephesians 6:19-20</summary>
+            <blockquote>
+              Pray also for me, that the message may be given to me when I open
+              my mouth to make known with boldness the mystery of the gospel.
+              For this I am an ambassador in chains. Pray that I might be bold
+              enough to speak about it as I should.
+            </blockquote>
+          </details>
+          <details>
+            <summary>Colossians 4:2-4</summary>
+            <blockquote>
+              Devote yourselves to prayer; stay alert in it with thanksgiving.
+              At the same time, pray also for us that God may open a door to us
+              for the word, to speak the mystery of Christ, for which I am in
+              chains, so that I may make it known as I should.
+            </blockquote>
+          </details>
+          <details>
+            <summary>Philippians 4:17</summary>
+            <blockquote>
+              Not that I seek the gift, but I seek the profit that is increasing
+              to your account.
+            </blockquote>
+          </details>
+        </div>
       </section>
       <section class="block" id="partner-block"></section>
     </main>
