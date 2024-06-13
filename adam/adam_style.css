@@ -375,105 +375,85 @@ blockquote {
 /* accordion */
 
 #accordion {
-  background-color: #ffffff;
+  background-color: #44576d;
+  border: #44576d solid 2px;
+  color: #ffffff;
+  border-radius: 15px;
+  padding: 5px;
 }
 
-#accordion details,
-summary {
-  font-size: 1.5rem;
-  background-color: #ffffff;
-  padding-top: 0.5rem;
-  margin-bottom: 0.5rem;
+#accordion details {
+  font-size: 1rem;
+  background-color: #44576d;
+  color: #ffffff;
+  padding-top: 1rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 1rem;
+}
+
+#accordion details summary {
+  background-color: #44576d;
+  color: #ffffff;
 }
 
 #accordion details blockquote {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
+  font-style: italic;
   background-color: #ffffff;
   text-align: justify;
-}
-/* Section Verse Accordion -- MOBILE ONLY */
-.accordion-container {
-  display: flex;
+  border: none;
+  border-radius: 5px;
 }
 
-.accordion {
+/* Partner Block */
+
+.partner-buttons {
   display: grid;
   grid-template-columns: 1fr;
-  place-content: center;
-  /* grid-template-columns: repeat(auto-fit, min(100%, 30rem)); */
-  /* min-height: 100vh; */
-  width: 100%;
-  gap: 1rem;
-  margin: 0 auto;
-  padding: 1rem;
-  color: #63465a;
-  background: #fffef9;
-}
-
-/* Core styles/functionality */
-.tab input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
-.tab__content {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.35s;
-}
-.tab input:checked ~ .tab__content {
-  max-height: 100%;
-}
-
-.accordion {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.accordion h1 {
-  font-size: 2.5rem;
-  text-align: center;
-  /* padding-top: 2rem; */
-  padding-bottom: 2rem;
-}
-
-.accordion-container {
-  display: grid;
-  grid-template-columns: 1fr;
+  /*   grid-gap: 1rem; */
   place-items: center;
-  width: 100%;
-  max-width: 350px;
-  margin: 0 auto;
-  color: #63465a;
-  border: 2px solid;
-  border-radius: 0.5rem;
-  overflow: hidden;
 }
-.tab__label,
-.tab__close {
-  display: flex;
-  color: white;
-  background: #63465a;
+.partner-buttons .button {
+  font-size: 18px;
+  color: #44576d;
+  font-family: inherit;
+  font-weight: 500;
   cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  padding: 0.25rem;
 }
-.tab__label {
-  justify-content: space-between;
-  font-size: 1.5rem;
-  padding: 1rem;
+
+.partner-buttons .button:focus,
+.partner-buttons .button:hover {
+  color: #44576d;
 }
-.tab__label::after {
-  content: "\276F";
-  width: 1em;
-  height: 1em;
-  text-align: center;
-  transform: rotate(90deg);
-  transition: all 0.35s;
+
+.partner-buttons .button:focus:after,
+.partner-buttons .button:hover:after {
+  width: 100%;
+  left: 0%;
+  border: none;
 }
-.tab input:checked + .tab__label::after {
-  transform: rotate(270deg);
-}
-.tab__content p {
-  margin: 0;
-  padding: 1rem;
-  font-size: 1.25rem;
+
+.partner-buttons .button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #44576d;
+  border: none;
+  border-color: transparent;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
 }
